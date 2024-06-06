@@ -1,0 +1,12 @@
+
+mysql -u root -p
+
+create database minimax;
+create user 'minimax'@'localhost' identified by 'minimax';
+ALTER USER 'minimax'@'localhost' IDENTIFIED WITH mysql_native_password BY 'minimax';
+grant all on minimax.* to 'minimax'@'localhost';
+
+mysql minimax -u minimax --password=minimax 
+
+use minimax;
+
